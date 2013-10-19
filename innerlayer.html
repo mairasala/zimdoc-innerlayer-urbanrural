@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RURAL/URBAN</title>
+
+		<link href="css/innerlayer.css" rel="stylesheet" type="text/css" />
+		<!--link href="style/chapterPlayer.css" rel="stylesheet" type="text/css" /--!>
+
+		<script>
+			// this sets the namespace for CreateJS to the window object, so you can instantiate objects without specifying
+			// the namespace: "new Graphics()" instead of "new createjs.Graphics()"
+			// this is a quick way to make projects built on pervious versions of EaselJS run without extensive modifications
+			var createjs = window;
+		</script>
+		<!--script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script-->
+		<script src="js/libs/jquery-1.8.2.js"></script>
+		<script src="js/libs/preloadjs-0.2.0.min.js"></script>
+		<script src="js/libs/easeljs-0.5.0.min.js"></script>
+		<script src="js/libs/filters/Filter.js"></script>
+		<script src="js/libs/filters/ColorMatrix.js"></script>
+		<script src="js/libs/filters/ColorMatrixFilter.js"></script>
+		<script src="js/libs/filters/AlphaMaskFilter.js"></script>
+		<script src="js/libs/soundjs-0.3.0.min.js"></script>
+		
+		<script src="data/elementsData.js"></script>
+		<script src="js/Elements.js"></script>
+		<script src="js/SoundElement.js"></script>
+		<script src="js/StageElement.js"></script>
+		<script src="js/Utils.js"></script>
+		<script src="js/Main.js"></script>
+		<script src="js/KeyManager.js"></script>
+		<script src="js/AudioManager.js"></script>
+	</head>
+	<body onload="init();">
+
+		<div id="loader"></div>
+
+		<div class="canvasHolder">
+			<canvas id="testCanvas" width="960" height="400"></canvas>
+			<div id="testCanvas2" width="960" height="400" style="position: absolute;"></div>
+		</div>
+		<audio id="audioTag" preload="auto"></audio>
+		<video id="pioneers" style="display:none">
+			<!--source src="media/rodesiaProgress.mp4" type="video/mp4"></source-->
+			<source src="media/rodesiaProgress.ogv" type="video/ogg"></source>
+		</video>
+			<!---video id="smith" style="display:none">
+				<source src="media/smith.ogg" type="video/ogg"></source>
+			</video-->
+		<!--a href="index.html" id="back">home</div-->
+		<header class="sectionHeader">
+		<a href="javascript:history.back()">&larr;</a>
+	</header>
+	</body>
+</html>
